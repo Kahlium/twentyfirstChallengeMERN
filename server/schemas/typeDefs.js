@@ -6,6 +6,9 @@ const typeDefs = `
     password: String
     savedBooks: [User]!
   }
+  type Query {
+    users: [User]!
+  }
 `;
 
 module.exports = typeDefs;
