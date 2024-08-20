@@ -2,9 +2,23 @@ const { User } = require('../models')
 
 const resolvers = {
     Query: {
-        users: async() => {
+        me: async() => {
             return User.find()
         }
+    },
+    Mutation: {
+        login: async() => {
+
+        },
+        addUser: async() => {
+            
+        },
+        saveBook: async() => {
+            
+        },
+        removeBook: async() => {
+            
+        },
     }
 };
 

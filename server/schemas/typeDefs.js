@@ -4,10 +4,28 @@ const typeDefs = `
     username: String
     email: String
     password: String
-    savedBooks: [User]!
+    savedBooks: [Book]!
+  }
+  type Book {
+    bookId: ID
+    authors:
+    description: String
+    title: String
+    image:
+    link:
   }
   type Query {
     users: [User]!
+  }
+  type Mutation {
+    login:
+    addUser:
+    saveBook:
+    removeBook:
+  }
+  type Auth {
+    token: ID
+    user: User
   }
 `;
 
