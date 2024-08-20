@@ -15,7 +15,7 @@ const typeDefs = `
     link:
   }
   type Query {
-    users: [User]!
+    me: [User]!
   }
   type Mutation {
     login:
